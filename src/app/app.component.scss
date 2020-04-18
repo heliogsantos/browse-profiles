@@ -1,12 +1,15 @@
 .menu-wraper {
     width: 100%;
-    display: flex;
 
     .menu {
-        width: 15%;
+        width: 300px;
     }
 
     .header {
-        width: 95%;
+        width: 100%;
+        position: fixed;
+        z-index: 20;
+        left: 0;
+        top: 0;
     }
 }

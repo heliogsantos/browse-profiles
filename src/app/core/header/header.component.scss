@@ -1,3 +1,38 @@
 .header {
-    
+    width: 100%;
+    padding: 20px 40px 20px 0px;
+    -webkit-box-shadow: 34px 9px 43px -16px rgba(0,0,0,0.2);
+    -moz-box-shadow: 34px 9px 43px -16px rgba(0,0,0,0.2);
+    box-shadow: 34px 9px 43px -16px rgba(0,0,0,0.2);
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+
+    .btns {
+        width: 140px;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .logo-wraper {
+        width: 300px;
+        text-align: center;
+
+        p {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        p strong {
+            font-weight: 800;
+            font-size: 17px;
+            color: #7159c1;
+        }
+    }
 }
