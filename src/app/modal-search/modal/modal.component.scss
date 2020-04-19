@@ -1,5 +1,5 @@
 .wraper-modal {
-    background: #ffffff;
+    background-color: #fefff4;
     width: 100%;
     top: -400px;
     position: absolute;
@@ -13,19 +13,18 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 10px 0;
 
     .header {
         position: relative;
         top: -100px;
         z-index: 0;
         transition: .4s linear;
-        
     }
 
     .header, .content, .footer {
         width: 100%;
         text-align: center;
-        background-color: #fefff4;
         height: 20%;
         display: flex;
         align-items: center;
@@ -46,9 +45,8 @@
     }
 
     .content {
-        padding: 50px 30px;
+        padding: 0px 30px;
         height: 60%;
-        background-color: #fefff4;
         background-image: none;
         display: block;
 
@@ -69,7 +67,7 @@
             background-image: none;
             color: #000000;
             border: 2px solid #000000;
-            background-color: #fefff4;
+
         }
 
         .buttons {
@@ -91,10 +89,9 @@
     }
 
     .footer {
-        background-color: #fefff4;
         background-image: none;
         justify-content: flex-end;
-        padding: 10px 30px;
+        padding: 30px 30px 10px 30px;
     }
 }
 
