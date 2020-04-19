@@ -29,8 +29,14 @@ export class ModalComponent implements OnInit {
 
   openModal = false;
 
-  dddd(filter, { target } = event) {
-   target.classList.add("active-filter");
+  removeActive() {
+    const lists = Array.from(document.querySelectorAll('.box ul li'));
+    for(let list of lists) list.classList.remove('active-filter');
+  }
+
+  filterSearch(filter, {target} = (event)) {
+   this.removeActive();
+    (<HTMLTextAreaElement>target).classList.add("active-filter");
   }
 
   closeModalSearch() {

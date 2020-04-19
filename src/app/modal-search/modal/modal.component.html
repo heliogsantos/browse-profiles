@@ -6,7 +6,7 @@
        <div class="box" *ngFor="let filter of filters">
            <p>{{filter.name}}</p>
            <ul>
-               <li (click)="dddd(filter, $event)" class="btn btn-type" *ngFor="let type of filter.types">{{type}}</li>
+               <li (click)="filterSearch(filter, $event)" class="btn btn-type" *ngFor="let type of filter.types">{{type}}</li>
            </ul>
        </div>
     </div>
