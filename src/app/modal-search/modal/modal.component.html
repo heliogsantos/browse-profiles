@@ -1,14 +1,11 @@
-<section class="wraper-modal" [ngClass]="{'activeModalSearh': true}">
+<section class="wraper-modal" [ngClass]="{'activeModalSearh': openModal}">
     <div class="header">
         <p><strong>Faça sua busca por:</strong> Tipo de contarato, Nível de experiência ou Tamanho da empresa</p>
     </div>
     <div class="content">
-        <div class="select-wraper">
+        <div class="select-wraper box">
             <select class="btn select">
-                <option selected>Todos os skills</option>
-                <option value="0">Front-End</option>
-                <option value="0">Front-End</option>
-                <option value="0">Front-End</option>
+                <option value="selectprofile" *ngFor="let selectprofile of selectprofiles">{{selectprofile}}</option>
             </select>
         </div>
         <div class="buttons">
