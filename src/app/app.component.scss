@@ -1,8 +1,14 @@
 .menu-wraper {
     width: 100%;
 
-    .menu {
-        width: 300px;
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .menu {
+            width: 300px;
+        }
     }
 
     .header {

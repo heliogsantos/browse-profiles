@@ -14,20 +14,27 @@ export class ModalComponent implements OnInit {
   filters = [ 
     {
       name: "Tipo de contrato",
-      types: ["CLT", "PJ", "Estágio"]
+      types: ["CLT", "PJ", "Estágio"],
+      active: false
     },{
       name: "Nível de experiência",
-      types: ["Júnior", "Pleno", "Sênior"]
+      types: ["Júnior", "Pleno", "Sênior"],
+      active: true
     },{
       name: "Tamanho da empresa",
-      types: ["Startup", "Pequena ou Média empresa", "Grande empresa"]
+      types: ["Startup", "Pequena ou Média empresa", "Grande empresa"],
+      active: false
     }
   ]
 
   openModal = false;
 
+  dddd(filter, { target } = event) {
+   target.classList.add("active-filter");
+  }
+
   closeModalSearch() {
-    this.dataService.openModalSearch(false);
+    this.openModal = false;
   }
 
   ngOnInit() {

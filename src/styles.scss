@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     list-style: none;
+    text-decoration: none;
 }
 
 html,
@@ -16,7 +17,7 @@ body {
 .btn {
     display: flex;
     justify-content: space-around;
-    background: #7159c1;
+    background-image: linear-gradient(90deg, #9175f5, #5f49ab);
     align-items: center;
     color: #ffffff;
     border: none;

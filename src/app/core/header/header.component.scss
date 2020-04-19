@@ -7,6 +7,7 @@
     background: #ffffff;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     z-index: 10;
 
     .btns {
@@ -24,16 +25,17 @@
         width: 300px;
         text-align: center;
 
-        p {
+        a {
             text-transform: uppercase;
-            font-size: 14px;
-            font-weight: 400;
+            font-size: 13px;
+            font-weight: 600;
+            color: #000000;
         }
 
-        p strong {
+        a strong {
             font-weight: 800;
-            font-size: 17px;
-            color: #7159c1;
+            font-size: 18px;
+            color: #5f49ab;
         }
     }
 }
