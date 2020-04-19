@@ -10,6 +10,20 @@ import { DataService } from './../../core/services/data-service';
 export class ModalComponent implements OnInit {
 
   constructor(private dataService: DataService) { }
+
+  filters = [ 
+    {
+      name: "Tipo de contrato",
+      types: ["CLT", "PJ", "Estágio"]
+    },{
+      name: "Nível de experiência",
+      types: ["Júnior", "Pleno", "Sênior"]
+    },{
+      name: "Tamanho da empresa",
+      types: ["Startup", "Pequena ou Média empresa", "Grande empresa"]
+    }
+  ]
+
   openModal = false;
 
   closeModalSearch() {

@@ -3,7 +3,12 @@
         <p><strong>Faça sua busca por:</strong> Tipo de contarato, Nível de experiência ou Tamanho da empresa</p>
     </div>
     <div class="content">
-       
+       <div class="box" *ngFor="let filter of filters">
+           <p>{{filter.name}}</p>
+           <ul>
+               <li class="btn btn-type" *ngFor="let type of filter.types">{{type}}</li>
+           </ul>
+       </div>
     </div>
     <div class="footer">
         <button (click)="closeModalSearch()" class="btn">fechar</button>
