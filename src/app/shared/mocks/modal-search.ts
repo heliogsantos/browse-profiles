@@ -14,4 +14,8 @@ export class ModalSearch {
           active: false
         }
     ]
+
+    public listButtons() {
+        return this.filters;
+    }
 }

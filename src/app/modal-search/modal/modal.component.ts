@@ -13,7 +13,7 @@ export class ModalComponent implements OnInit {
 
   constructor(private dataService: DataService) { }
 
-  filters = new ModalSearch().filters;
+  filters = new ModalSearch().listButtons();
 
   openModal = false;
 

@@ -1,14 +1,24 @@
-<section class="wraper-modal" [ngClass]="{'activeModalSearh': openModal}">
+<section class="wraper-modal" [ngClass]="{'activeModalSearh': true}">
     <div class="header">
         <p><strong>Faça sua busca por:</strong> Tipo de contarato, Nível de experiência ou Tamanho da empresa</p>
     </div>
     <div class="content">
-       <div class="box" *ngFor="let filter of filters">
-           <p>{{filter.name}}</p>
-           <ul>
-               <li (click)="filterSearch(filter, $event)" class="btn btn-type" *ngFor="let type of filter.types">{{type}}</li>
-           </ul>
-       </div>
+        <div class="select-wraper">
+            <select class="btn select">
+                <option selected>Todos os skills</option>
+                <option value="0">Front-End</option>
+                <option value="0">Front-End</option>
+                <option value="0">Front-End</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <div class="box" *ngFor="let filter of filters">
+                <p>{{filter.name}}</p>
+                <ul>
+                    <li (click)="filterSearch(filter, $event)" class="btn btn-type" *ngFor="let type of filter.types">{{type}}</li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="footer">
         <button (click)="closeModalSearch()" class="btn">fechar</button>
