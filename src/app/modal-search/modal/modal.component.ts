@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { DataService } from './../../core/services/data-service';
+import { ModalSearch } from './../../shared/mocks/modal-search';
+
 
 @Component({
   selector: 'app-modal',
@@ -11,21 +13,7 @@ export class ModalComponent implements OnInit {
 
   constructor(private dataService: DataService) { }
 
-  filters = [ 
-    {
-      name: "Tipo de contrato",
-      types: ["CLT", "PJ", "Estágio"],
-      active: false
-    },{
-      name: "Nível de experiência",
-      types: ["Júnior", "Pleno", "Sênior"],
-      active: true
-    },{
-      name: "Tamanho da empresa",
-      types: ["Startup", "Pequena ou Média empresa", "Grande empresa"],
-      active: false
-    }
-  ]
+  filters = new ModalSearch().filters;
 
   openModal = false;
 
