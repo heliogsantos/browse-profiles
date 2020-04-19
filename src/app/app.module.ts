@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
 import { MenuComponent } from './core/menu/menu.component';
+import { ModalSearchModule } from './modal-search/modal-search.module';
+import { DataService } from './core/services/data-service';
+
 
 @NgModule({
   declarations: [
@@ -12,9 +15,10 @@ import { MenuComponent } from './core/menu/menu.component';
     MenuComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ModalSearchModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
