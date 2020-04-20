@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { DataService } from './../../core/services/data-service';
 import { ModalSearch } from './../../shared/mocks/modal-search';
+import { StopPropagation } from './../../shared/models/stop-propagation';
 
 
 @Component({
@@ -11,7 +12,7 @@ import { ModalSearch } from './../../shared/mocks/modal-search';
 })
 export class ModalComponent implements OnInit {
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService, private stopPropagation: StopPropagation) { }
 
   modalSearch = new ModalSearch();
 
@@ -32,6 +33,10 @@ export class ModalComponent implements OnInit {
 
   closeModalSearch() {
     this.openModal = false;
+  }
+
+  stopPropagations(event) {
+    this.stopPropagation.stop(event);
   }
 
   ngOnInit() {

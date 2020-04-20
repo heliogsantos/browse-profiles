@@ -1,4 +1,4 @@
-<section class="wraper-modal" [ngClass]="{'activeModalSearh': openModal}">
+<section class="wraper-modal" [ngClass]="{'activeModalSearh': openModal}" (click)="stopPropagations($event)">
     <div class="header">
         <p><strong>Faça sua busca por:</strong> Tipo de contarato, Nível de experiência ou Tamanho da empresa</p>
     </div>

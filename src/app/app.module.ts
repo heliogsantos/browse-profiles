@@ -6,6 +6,7 @@ import { HeaderComponent } from './core/header/header.component';
 import { MenuComponent } from './core/menu/menu.component';
 import { ModalSearchModule } from './modal-search/modal-search.module';
 import { DataService } from './core/services/data-service';
+import { StopPropagation } from './shared/models/stop-propagation';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { DataService } from './core/services/data-service';
     BrowserModule,
     ModalSearchModule
   ],
-  providers: [DataService],
+  providers: [DataService, StopPropagation],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
