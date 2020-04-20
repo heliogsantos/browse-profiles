@@ -3,9 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
-import { ModalSearchModule } from './modal-search/modal-search.module';
 import { DataService } from './core/services/data-service';
 import { StopPropagation } from './shared/models/stop-propagation';
+
+import { FeaturedProfilesModule } from './featured-profiles/featured-profiles.module';
+import { ModalSearchModule } from './modal-search/modal-search.module';
 
 
 @NgModule({
@@ -15,7 +17,8 @@ import { StopPropagation } from './shared/models/stop-propagation';
   ],
   imports: [
     BrowserModule,
-    ModalSearchModule
+    ModalSearchModule,
+    FeaturedProfilesModule
   ],
   providers: [DataService, StopPropagation],
   bootstrap: [AppComponent]
