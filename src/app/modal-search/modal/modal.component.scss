@@ -1,9 +1,8 @@
 .wraper-modal {
     background-color: #fefff4;
     width: 100%;
-    top: -400px;
-    position: absolute;
-    left: 0;
+    margin-top: -600px;
+    visibility: hidden;
     transition: .3s linear;
     z-index: 10;
     -webkit-box-shadow: 34px 9px 43px -16px rgba(0,0,0,0.2);
@@ -96,8 +95,8 @@
 }
 
 .activeModalSearh {
-    top: 76px;
-
+    margin-top: 0;
+    visibility: visible;
     .header {
         top: 0;
     }
