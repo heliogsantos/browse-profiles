@@ -1,8 +1,8 @@
 <section class="wraper-modal" [ngClass]="{'activeModalSearh': openModal}" (click)="stopPropagations($event)">
-    <div class="header">
+    <div class="header padding-default">
         <p><strong>Faça sua busca por:</strong> Tipo de contarato, Nível de experiência ou Tamanho da empresa</p>
     </div>
-    <div class="content">
+    <div class="content padding-default">
         <div class="select-wraper box">
             <select class="btn select">
                 <option value="selectprofile" *ngFor="let selectprofile of selectprofiles">{{selectprofile}}</option>
@@ -17,7 +17,7 @@
             </div>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer padding-default">
         <button (click)="closeModalSearch()" class="btn">fechar</button>
     </div>
 </section>

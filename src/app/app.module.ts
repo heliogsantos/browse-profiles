@@ -6,7 +6,6 @@ import { HeaderComponent } from './core/header/header.component';
 import { DataService } from './core/services/data-service';
 import { StopPropagation } from './shared/models/stop-propagation';
 
-import { FeaturedProfilesModule } from './featured-profiles/featured-profiles.module';
 import { ModalSearchModule } from './modal-search/modal-search.module';
 
 
@@ -17,8 +16,7 @@ import { ModalSearchModule } from './modal-search/modal-search.module';
   ],
   imports: [
     BrowserModule,
-    ModalSearchModule,
-    FeaturedProfilesModule
+    ModalSearchModule
   ],
   providers: [DataService, StopPropagation],
   bootstrap: [AppComponent]
