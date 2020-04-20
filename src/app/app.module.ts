@@ -7,6 +7,7 @@ import { DataService } from './core/services/data-service';
 import { StopPropagation } from './shared/models/stop-propagation';
 
 import { ModalSearchModule } from './modal-search/modal-search.module';
+import { ListCardsModule } from './list-cards/list-cards.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ModalSearchModule } from './modal-search/modal-search.module';
   ],
   imports: [
     BrowserModule,
-    ModalSearchModule
+    ModalSearchModule,
+    ListCardsModule
   ],
   providers: [DataService, StopPropagation],
   bootstrap: [AppComponent]
