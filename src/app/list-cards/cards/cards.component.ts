@@ -9,6 +9,8 @@ export class CardsComponent implements OnInit {
 
   constructor() { }
 
+  image = '../../../../assets/images/avatar.jpg';
+
   ngOnInit() {
   }
 
