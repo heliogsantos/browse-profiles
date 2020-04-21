@@ -11,6 +11,11 @@ export class CardComponent implements OnInit {
 
    @Input() profile: any;
 
+   firstName(name) {
+    return name.split(" ")[0];
+  }
+
+
   ngOnInit() {
   }
 }

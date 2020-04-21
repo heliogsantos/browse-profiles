@@ -22,35 +22,72 @@ export class CardsComponent implements OnInit {
       hour: "R$ 32/hr"
     },{
       id: "2",
-      name: "Mariana Petrecu",
-      area: "Mobile Designer",
-      contract: "Freelancer",
-      skills: ["React", "IOS", "React Native"],
+      name: "Marcela Rocha",
+      area: "Front-End",
+      contract: "PJ",
+      skills: ["React", "Angular", "Javascript"],
       description: "Lorem ipsum dolor in quam iure, odio amet atque.",
-      imageURL: "../../../../assets/images/avatar.jpg",
-      hour: "R$ 30/hr"
+      imageURL: "../../../../assets/images/marcela.jpg",
+      hour: "R$ 24/hr"
     },{
       id: "3",
-      name: "Mariana Petrecu",
-      area: "Mobile Designer",
-      contract: "Freelancer",
-      skills: ["React", "IOS", "React Native"],
+      name: "Paulo Silva",
+      area: "Back-End",
+      contract: "CLT",
+      skills: ["C#", "Node", "Angular"],
       description: "Lorem ipsum dolor in quam iure, odio amet atque.",
-      imageURL: "../../../../assets/images/avatar.jpg",
+      imageURL: "../../../../assets/images/paulo.jpg",
       hour: "R$ 26/hr"
     },{
       id: "4",
-      name: "Mariana Petrecu",
-      area: "Mobile Designer",
+      name: "Rodrigo Cezar",
+      area: "UI",
       contract: "Freelancer",
-      skills: ["React", "IOS", "React Native"],
+      skills: ["PS", "AI", "XD"],
       description: "Lorem ipsum dolor in quam iure, odio amet atque.",
-      imageURL: "../../../../assets/images/avatar.jpg",
+      imageURL: "../../../../assets/images/rodrigo.jpeg",
+      hour: "R$ 60/hr"
+    },{
+      id: "1",
+      name: "Luciano Rocha",
+      area: "Front-End",
+      contract: "PJ",
+      skills: ["HTML", "CSS", "React", "Node"],
+      description: "Lorem ipsum dolor in quam iure, odio amet atque.",
+      imageURL: "../../../../assets/images/luciano.jpg",
+      hour: "R$ 32/hr"
+    },{
+      id: "2",
+      name: "Marcela Rocha",
+      area: "Front-End",
+      contract: "PJ",
+      skills: ["React", "Angular", "Javascript"],
+      description: "Lorem ipsum dolor in quam iure, odio amet atque.",
+      imageURL: "../../../../assets/images/marcela.jpg",
+      hour: "R$ 24/hr"
+    },{
+      id: "3",
+      name: "Paulo Silva",
+      area: "Back-End",
+      contract: "CLT",
+      skills: ["C#", "Node", "Angular"],
+      description: "Lorem ipsum dolor in quam iure, odio amet atque.",
+      imageURL: "../../../../assets/images/paulo.jpg",
+      hour: "R$ 26/hr"
+    },{
+      id: "4",
+      name: "Rodrigo Cezar",
+      area: "UI",
+      contract: "Freelancer",
+      skills: ["PS", "AI", "XD"],
+      description: "Lorem ipsum dolor in quam iure, odio amet atque.",
+      imageURL: "../../../../assets/images/rodrigo.jpeg",
       hour: "R$ 60/hr"
     }
   ]
-
+  
   ngOnInit() {
+   
   }
 
 }
