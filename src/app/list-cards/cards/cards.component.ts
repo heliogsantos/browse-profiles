@@ -16,7 +16,7 @@ export class CardsComponent implements OnInit {
       name: "Mariana Petrecu",
       area: "Mobile Designer",
       contract: "Freelancer",
-      skills: ["React", "IOS", "React Native"],
+      skills: ["React", "IOS", "React Native", "Android", "CSS"],
       description: "Lorem ipsum dolor in quam iure, odio amet atque.",
       imageURL: "../../../../assets/images/avatar.jpg",
       hour: "R$ 32/hr"
@@ -25,7 +25,7 @@ export class CardsComponent implements OnInit {
       name: "Marcela Rocha",
       area: "Front-End",
       contract: "PJ",
-      skills: ["React", "Angular", "Javascript"],
+      skills: ["React", "Angular", "JS"],
       description: "Lorem ipsum dolor in quam iure, odio amet atque.",
       imageURL: "../../../../assets/images/marcela.jpg",
       hour: "R$ 24/hr"
@@ -34,7 +34,7 @@ export class CardsComponent implements OnInit {
       name: "Paulo Silva",
       area: "Back-End",
       contract: "CLT",
-      skills: ["C#", "Node", "Angular"],
+      skills: ["C#", "Node", "Java", "C#", "Node", "Java"],
       description: "Lorem ipsum dolor in quam iure, odio amet atque.",
       imageURL: "../../../../assets/images/paulo.jpg",
       hour: "R$ 26/hr"
@@ -61,7 +61,7 @@ export class CardsComponent implements OnInit {
       name: "Marcela Rocha",
       area: "Front-End",
       contract: "PJ",
-      skills: ["React", "Angular", "Javascript"],
+      skills: ["React", "Angular", "JS", "React", "Angular", "JS", "React", "Angular", "JS"],
       description: "Lorem ipsum dolor in quam iure, odio amet atque.",
       imageURL: "../../../../assets/images/marcela.jpg",
       hour: "R$ 24/hr"
@@ -70,7 +70,7 @@ export class CardsComponent implements OnInit {
       name: "Paulo Silva",
       area: "Back-End",
       contract: "CLT",
-      skills: ["C#", "Node", "Angular"],
+      skills: ["C#", "Node", "Java"],
       description: "Lorem ipsum dolor in quam iure, odio amet atque.",
       imageURL: "../../../../assets/images/paulo.jpg",
       hour: "R$ 26/hr"

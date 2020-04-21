@@ -15,7 +15,15 @@ export class CardComponent implements OnInit {
     return name.split(" ")[0];
   }
 
+  skillSize(skills) {
+    return skills.slice(0, 3);
+  }
+
+  moreSkill(profile, skillSize) {
+    return profile.length - skillSize.length;
+  }
 
   ngOnInit() {
+    
   }
 }
