@@ -8,10 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class CardComponent implements OnInit {
 
   constructor() { }
-  
+
   image = '../../../../assets/images/avatar.jpg';
 
   ngOnInit() {
   }
-
 }
