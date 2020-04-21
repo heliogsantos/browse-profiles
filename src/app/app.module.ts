@@ -13,7 +13,7 @@ import { ListCardsModule } from './list-cards/list-cards.module';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
