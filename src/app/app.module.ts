@@ -8,6 +8,7 @@ import { StopPropagation } from './shared/models/stop-propagation';
 
 import { ModalSearchModule } from './modal-search/modal-search.module';
 import { ListCardsModule } from './list-cards/list-cards.module';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ListCardsModule } from './list-cards/list-cards.module';
   imports: [
     BrowserModule,
     ModalSearchModule,
-    ListCardsModule
+    ListCardsModule,
+    AppRoutingModule
   ],
   providers: [DataService, StopPropagation],
   bootstrap: [AppComponent]
