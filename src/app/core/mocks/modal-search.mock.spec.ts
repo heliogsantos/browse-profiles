@@ -1,4 +1,4 @@
-import { ModalSearch } from './modal-search';
+import { ModalSearch } from './modal-search.mock';
 
 describe('ModalSearch', () => {
   it('should create an instance', () => {

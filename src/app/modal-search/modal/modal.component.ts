@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DataService } from './../../core/services/data-service';
-import { ModalSearch } from './../../shared/mocks/modal-search';
+import { DataService } from '../../shared/services/data-service';
+import { ModalSearch } from '../../core/mocks/modal-search.mock';
 import { StopPropagation } from './../../shared/models/stop-propagation';
 
 

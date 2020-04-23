@@ -2,27 +2,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './core/header/header.component';
-import { DataService } from './core/services/data-service';
-import { StopPropagation } from './shared/models/stop-propagation';
 
 import { ModalSearchModule } from './modal-search/modal-search.module';
 import { ListCardsModule } from './list-cards/list-cards.module';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { CoreModule } from './core/core.module';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
     ModalSearchModule,
     ListCardsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CoreModule
   ],
-  providers: [DataService, StopPropagation],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
