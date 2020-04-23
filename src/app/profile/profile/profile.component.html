@@ -1,1 +1,31 @@
-<p>profile works!</p>
+<div class="profile-wraper">
+    <section class="back-home">
+        <a [routerLink]="['']" class="btn-outline">voltar para home</a>
+    </section>
+
+    <section class="content">
+        <div class="card">
+            <div class="profile-description">
+                <div class="image">
+                    <div class="avatar" [ngStyle]="{'background-image':'url(' + image + ')'}"></div>
+                </div>
+                <div class="description">
+                    <h2 class="color-card font-700">Cladia Daniela Cezar</h2>
+                    <p class="color-card">Front-End web developer</p>
+                    <p class="color-base font-700">Pleno</p>
+                    <div class="btns">
+                        <a [routerLink]="['']" class="btn">WhatsApp</a>
+                        <a [routerLink]="['']" class="btn">E-mail</a>
+                        <a [routerLink]="['']" class="btn-outline">Currículo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="avaliable">
+                <div class="networks">
+                    <a [routerLink]="['']" class="network" *ngFor="let network of networks" [ngStyle]="{'background-image':'url(' + network.svg + ')'}"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
