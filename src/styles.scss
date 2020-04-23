@@ -29,11 +29,7 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     font-size: 13px;
-    position: relative;    
-
-    &:hover {
-        animation: animeButton .2s linear;
-    }
+    position: relative;
 }
 
 .btn-outline {
@@ -51,6 +47,12 @@ body {
 
     80% {transform: translateX(-1.5px);}
     100% {transform: translateX(1.5px);}
+}
+
+.btn-animation {
+    &:hover {
+        animation: animeButton .2s linear;
+    }
 }
 
 .select {
@@ -107,7 +109,10 @@ body {
 }
 
 .color-base {
-    color: #5f49ab;
+    color: #4a378d;
+}
+.color-base-dark {
+    color: #312461;
 }
 
 .bg-base {

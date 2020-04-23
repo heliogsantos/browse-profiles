@@ -15,7 +15,7 @@
         </div>
         <div class="slills color-card">
             <div class="skill font-600" *ngFor="let skill of skillSize(profile.skills)">{{firstName(skill)}}</div>
-            <div class="btn font-600" *ngIf="profile.skills.length > 3">+{{moreSkill(profile.skills, skillSize(profile.skills))}}</div>
+            <div class="btn btn-animation font-600" *ngIf="profile.skills.length > 3">+{{moreSkill(profile.skills, skillSize(profile.skills))}}</div>
         </div>
     </div>
     <div class="footer">
