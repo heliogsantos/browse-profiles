@@ -15,7 +15,7 @@ body {
     background: #f4f6f8;
 }
 
-.btn {
+.btn, .btn-outline {
     display: flex;
     justify-content: space-around;
     background-image: linear-gradient(90deg, #9175f5, #5f49ab);
@@ -34,6 +34,12 @@ body {
     &:hover {
         animation: animeButton .2s linear;
     }
+}
+
+.btn-outline {
+    background-image: none;
+    border: 2px solid #5f49ab;
+    color: #5f49ab;
 }
 
 @keyframes animeButton {
@@ -64,7 +70,12 @@ body {
 
 .avatar {
     border-radius: 100%;
-    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 10px solid #fefff4; box-sizing: content-box;
+    -webkit-box-shadow: 0px 2px 12px -2px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px 2px 12px -2px rgba(0,0,0,0.17);
+    box-shadow: 0px 2px 12px -2px rgba(0,0,0,0.17);
 }
 
 .align-center {
@@ -93,4 +104,8 @@ body {
     -webkit-box-shadow: 0px 4px 12px -5px rgba(0,0,0,0.16);
     -moz-box-shadow: 0px 4px 12px -5px rgba(0,0,0,0.16);
     box-shadow: 0px 4px 12px -5px rgba(0,0,0,0.16);
+}
+
+.color-base {
+    color: #5f49ab;
 }
