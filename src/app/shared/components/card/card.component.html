@@ -14,7 +14,7 @@
             <p class="font-600">{{profile.contract}}</p>
         </div>
         <div class="slills color-card">
-            <div class="skill font-600" *ngFor="let skill of skillSize(profile.skills)">{{skill | firstName}}</div>
+            <div class="skill font-600" *ngFor="let skill of skillSize(profile.skills)">{{firstName(skill)}}</div>
             <div class="btn btn-animation font-600" *ngIf="profile.skills.length > 3">+{{moreSkill(profile.skills, skillSize(profile.skills))}}</div>
         </div>
     </div>
