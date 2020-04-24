@@ -4,21 +4,8 @@
     position: relative;
     top: 100px;
     padding: 10px 40px;
-
-    .back-home {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        padding-bottom: 10px;
-
-        .btn {
-            background-image: none;
-            background: transparent;
-            border: 2px solid #5f49ab;
-        }
-    }
-
-    .content {
+    
+    .profile-banner {
         width: 100%;
         padding: 20px 0;
         
@@ -106,5 +93,9 @@
                 }
             }
         }
+    }
+
+    .time-line {
+
     }
 }
