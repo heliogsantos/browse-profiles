@@ -11,10 +11,6 @@ export class CardComponent implements OnInit {
 
    @Input() profile: any;
 
-   firstName(name) {
-    return name.split(" ")[0];
-  }
-
   skillSize(skills) {
     return skills.slice(0, 3);
   }
