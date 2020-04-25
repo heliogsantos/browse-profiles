@@ -18,7 +18,7 @@ body {
 .btn, .btn-outline {
     display: flex;
     justify-content: space-around;
-    background-image: linear-gradient(90deg, #9175f5, #5f49ab);
+    background-image: linear-gradient(90deg, #8e72f1, #5f49ab);
     align-items: center;
     color: #ffffff;
     border: none;
@@ -85,6 +85,10 @@ body {
     text-align: center;
 }
 
+.font-800 {
+    font-weight: 800;
+}
+
 .font-700 {
     font-weight: 700;
 }
@@ -112,14 +116,31 @@ body {
 .color-base {
     color: #4a378d;
 }
+
 .color-base-dark {
     color: #312461;
+}
+
+.color-gray {
+    color: #999999;
 }
 
 .bg-base {
     background-color: #5f49ab;
 }
+.bg-light {
+    background-color: #8e72f1;
+}
 
 .radius-100 {
     border-radius: 100%;
+}
+
+.radius-4 {
+    border-radius: 4px;
+}
+
+.radius-left-4 {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
