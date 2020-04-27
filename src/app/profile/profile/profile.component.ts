@@ -1,3 +1,4 @@
+import { NetworksMock } from './../../shared/mocks/networks.mock';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,21 +12,7 @@ export class ProfileComponent implements OnInit {
 
   image = "/assets/images/avatar.jpg";
 
-  networks = [
-    {
-      name: "linkedin",
-      svg: "/assets/svg/linkedin.svg"
-    },{
-      name: "facebook",
-      svg: "/assets/svg/facebook.svg"
-    },{
-      name: "twitter",
-      svg: "/assets/svg/twitter.svg"
-    },{
-      name: "github",
-      svg: "/assets/svg/github.svg"
-    }
-  ]
+  networks = new NetworksMock().getNetworks;
 
   visible = false;
   copy = false;
@@ -48,5 +35,4 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

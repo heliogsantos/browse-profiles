@@ -15,7 +15,7 @@
                         <div class="tooltip radius-4" [class.visible]="visible">
                             <input class="font-800" id="email" *ngIf="!copy" type="text" value="helio.santosjunior@outlook.com">
                             <div *ngIf="!copy" class="copy" (click)="copyEmail()"></div>
-                            <p class="font-600 outlook" *ngIf="copy">Copiado com sucesso!</p>
+                            <p class="font-600" *ngIf="copy">Copiado com sucesso!</p>
                         </div>
                     </a>
                         <a [routerLink]="['']" class="color-base-dark btn-animation btn-outline">Currículo</a>
