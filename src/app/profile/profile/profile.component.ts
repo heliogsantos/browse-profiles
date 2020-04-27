@@ -27,6 +27,25 @@ export class ProfileComponent implements OnInit {
     }
   ]
 
+  visible = false;
+  copy = false;
+
+  displayTooltip() {
+    this.visible = true;
+  }
+ 
+  hideTooltip() {
+    this.visible = false;
+    this.copy = false;
+  }
+
+  copyEmail() {
+    const email = document.getElementById('email') as HTMLInputElement;
+    email.select();
+    document.execCommand("copy");
+    this.copy = true;
+  }
+
   ngOnInit() {
   }
 
