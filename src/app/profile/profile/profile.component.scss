@@ -69,7 +69,6 @@
             .avaliable {
                 display: flex;
                 flex-direction: column;
-                width: 20%;
                 padding: 14px 0px;
                 justify-content: flex-end;
 
@@ -164,6 +163,11 @@
                                 font-size: 16px;
                                 padding-right: 10px;
                             }
+                        }
+
+                        .about {
+                            width: 50%;
+                            text-align: justify;
                         }
                     }
 
