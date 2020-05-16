@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { DataService } from '../../services/data-service';
-import { FilterMock } from '../../mocks/filter-search.mock';
+import { FilterMock } from '../../mocks/filter.mock';
 import { StopPropagation } from '../../services/stop-propagation';
-
 
 @Component({
   selector: 'app-modal',
@@ -12,34 +11,23 @@ import { StopPropagation } from '../../services/stop-propagation';
 })
 export class ModalComponent implements OnInit {
 
-  constructor(private dataService: DataService, private stopPropagation: StopPropagation) { }
-
+  renderModal = false;
   modalSearch = new FilterMock();
+  selectprofiles = this.modalSearch.selectProfiles();
+  filters = this.modalSearch.listButtons();
 
-   selectprofiles = this.modalSearch.selectProfiles();
-   filters = this.modalSearch.listButtons();
+  constructor(
+    private dataService: DataService, 
+    private stopPropagation: StopPropagation
+  ) { }
 
-  openModal = false;
+  filterSearch = (evt: any) => evt.target.classList.add("active-filter");
 
-  removeActive() {
-    const lists = Array.from(document.querySelectorAll('.box ul li'));
-    for(let list of lists) list.classList.remove('active-filter');
-  }
+  closeModalSearch = () => this.renderModal = false;
 
-  filterSearch(filter, {target} = (event)) {
-   this.removeActive();
-    (<HTMLTextAreaElement>target).classList.add("active-filter");
-  }
-
-  closeModalSearch() {
-    this.openModal = false;
-  }
-
-  stopPropagations(event) {
-    this.stopPropagation.stop(event);
-  }
+  stopPropagations = (event: object) => this.stopPropagation.stop(<HTMLTextAreaElement>event);
 
   ngOnInit() {
-    this.dataService.modalSearch.subscribe(open => this.openModal = open);
+    this.dataService.modalSearch.subscribe(render => this.renderModal = render);
   }
 }

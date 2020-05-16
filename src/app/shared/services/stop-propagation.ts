@@ -6,7 +6,7 @@ import { Injectable } from "@angular/core";
 export class StopPropagation {
     constructor() {}
     
-    stop(element) {
+    stop(element: any) {
         return element.stopPropagation();
     }
 }
