@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { CardComponent } from './components/card/card.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { FirstNamePipe } from './pipes/first-name.pipe';
-import { ProfileModule } from './../modules/profile/profile.module';
+
 
 
 @NgModule({
@@ -16,7 +16,6 @@ import { ProfileModule } from './../modules/profile/profile.module';
   ],
   imports: [
     CommonModule,
-    ProfileModule,
     RouterModule
   ],
   exports: [CardComponent, FirstNamePipe, ModalComponent],

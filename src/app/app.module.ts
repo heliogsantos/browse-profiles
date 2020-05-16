@@ -4,14 +4,14 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HomeModule } from './modules/home/home.module';
+import { HomeModule } from './home/home.module';
 import { CoreModule } from './core/core.module';
-import { ProfileComponent } from './modules/profile/components/profile/profile.component';
-import { HomeComponent } from './modules/home/components/home/home.component';
+import { HomeComponent } from './home/components/home/home.component';
 
 export const routes: Routes = [
-  { path: '', component:  HomeComponent },
-  { path: 'profile', component: ProfileComponent}
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', component: HomeComponent },
+  { path: 'profile', loadChildren: './profile/profile.module#ProfileModule' }
 ];
 
 @NgModule({
@@ -19,11 +19,11 @@ export const routes: Routes = [
     AppComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     HomeModule,
     CoreModule,
-    RouterModule.forRoot(routes),
-    CommonModule
+    RouterModule.forRoot(routes)
   ],
   
   providers: [],
