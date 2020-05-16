@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { NetworksMock } from './../../../shared/mocks/networks.mock';
+import { NetworksMock } from '../../../../shared/mocks/networks.mock';
 
 @Component({
   selector: 'app-profile',

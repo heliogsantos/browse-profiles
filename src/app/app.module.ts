@@ -1,4 +1,3 @@
-import { SharedModule } from './shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -7,12 +6,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeModule } from './modules/home/home.module';
 import { CoreModule } from './core/core.module';
-import { ProfileModule } from './modules/profile/profile.module';
-import { ProfileComponent } from './modules/profile/profile/profile.component';
-import { CardsComponent } from './modules/home/cards/cards.component';
+import { ProfileComponent } from './modules/profile/components/profile/profile.component';
+import { HomeComponent } from './modules/home/components/home/home.component';
 
 export const routes: Routes = [
-  { path: '', component:  CardsComponent },
+  { path: '', component:  HomeComponent },
   { path: 'profile', component: ProfileComponent}
 ];
 
@@ -24,7 +22,6 @@ export const routes: Routes = [
     BrowserModule,
     HomeModule,
     CoreModule,
-    ProfileModule,
     RouterModule.forRoot(routes),
     CommonModule
   ],
