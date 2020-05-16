@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 import { DataService } from '../../shared/services/data-service';
-import { StopPropagation } from '../../shared/services/stop-propagation';
 
 @Component({
   selector: 'app-header',
@@ -10,20 +9,16 @@ import { StopPropagation } from '../../shared/services/stop-propagation';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private dataService: DataService, private stopPropagation: StopPropagation) { }
+  constructor(private dataService: DataService) { }
   
-  openModaSearch(event) {
+  openModaSearch = event => {
     event.stopPropagation();
     this.hideMoidal(true);
   }
 
-  hideMoidal(param: boolean) {
-    this.dataService.openModalSearch(param);
-  }
+  hideMoidal = (param: boolean) => this.dataService.openModalSearch(param);
 
-  stopPropagations(event) {
-    this.stopPropagation.stop(event);
-  }
+  stopPropagations = event => event.stopPropagation();
 
   ngOnInit() {
     document.querySelector('body').addEventListener('click', () =>  this.hideMoidal(false));
