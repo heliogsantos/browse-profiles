@@ -25,7 +25,6 @@ export const routes: Routes = [
     CoreModule,
     RouterModule.forRoot(routes)
   ],
-  
   providers: [],
   bootstrap: [AppComponent]
 })

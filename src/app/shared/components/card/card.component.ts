@@ -11,15 +11,9 @@ export class CardComponent implements OnInit {
 
    @Input() profile: any;
 
-  skillSize(skills) {
-    return skills.slice(0, 3);
-  }
+  skillSize = (skills: string) => skills.slice(0, 3);
 
-  moreSkill(profile, skillSize) {
-    return profile.length - skillSize.length;
-  }
+  moreSkill = (profile: any, skillSize: String[]) => profile.length - skillSize.length;
 
-  ngOnInit() {
-    
-  }
+  ngOnInit() {}
 }
