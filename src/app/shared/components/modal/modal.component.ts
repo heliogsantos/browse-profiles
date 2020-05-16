@@ -28,6 +28,6 @@ export class ModalComponent implements OnInit {
   stopPropagations = (event: object) => this.stopPropagation.stop(<HTMLTextAreaElement>event);
 
   ngOnInit() {
-    this.dataService.modalSearch.subscribe(render => this.renderModal = render);
+    this.dataService.modalSearch.subscribe((render: boolean) => this.renderModal = render);
   }
 }
