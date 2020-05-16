@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { DataService } from '../../shared/services/data-service';
-import { StopPropagation } from './../../shared/models/stop-propagation';
+import { StopPropagation } from '../../shared/services/stop-propagation';
 
 @Component({
   selector: 'app-header',

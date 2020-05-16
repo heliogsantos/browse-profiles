@@ -17,9 +17,9 @@
 
     .header {
         position: relative;
-        top: -100px;
+        top: 0px;
         z-index: 0;
-        transition: .5s linear;
+        transition: 0.6s linear;
     }
 
     .header, .content, .footer {
@@ -77,7 +77,7 @@
 
         .box {
             position: relative;
-            top: -400px;
+            top: 0px;
             transition: .6s linear;
 
             .active-filter {
@@ -95,17 +95,7 @@
 }
 
 .activeModalSearh {
-    top: 68px;
-
-    .header {
-        top: 0px;
-    }
-
-    .content {
-        .box {
-            top: 0px;
-        }
-    }
+    top: 0px;
 }
 
 

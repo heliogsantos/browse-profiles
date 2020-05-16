@@ -1,4 +1,4 @@
-export class ModalSearch {
+export class FilterMock {
    private filters = [
         {
           name: "Tipo de contrato",

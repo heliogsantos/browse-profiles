@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DataService } from '../../shared/services/data-service';
-import { ModalSearch } from '../../core/mocks/modal-search.mock';
-import { StopPropagation } from './../../shared/models/stop-propagation';
+import { DataService } from '../../services/data-service';
+import { FilterMock } from '../../mocks/filter-search.mock';
+import { StopPropagation } from '../../services/stop-propagation';
 
 
 @Component({
@@ -14,7 +14,7 @@ export class ModalComponent implements OnInit {
 
   constructor(private dataService: DataService, private stopPropagation: StopPropagation) { }
 
-  modalSearch = new ModalSearch();
+  modalSearch = new FilterMock();
 
    selectprofiles = this.modalSearch.selectProfiles();
    filters = this.modalSearch.listButtons();

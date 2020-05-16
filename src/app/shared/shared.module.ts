@@ -1,23 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
-import { AppRoutingModule } from './../app-routing/app-routing.module';
 import { CardComponent } from './components/card/card.component';
+import { ModalComponent } from './components/modal/modal.component';
 import { DataService } from './services/data-service';
-import { StopPropagation } from './models/stop-propagation';
+import { StopPropagation } from './services/stop-propagation';
 import { FirstNamePipe } from './pipes/first-name.pipe';
+import { ProfileModule } from './../modules/profile/profile.module';
 
 
 @NgModule({
   declarations: [
     CardComponent,
-    FirstNamePipe
+    FirstNamePipe,
+    ModalComponent
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    ProfileModule,
+    RouterModule
   ],
-  exports: [CardComponent, FirstNamePipe],
+  exports: [CardComponent, FirstNamePipe, ModalComponent],
   providers: [DataService, StopPropagation],
 })
 export class SharedModule { }
