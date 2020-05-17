@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DataService } from '../../shared/services/data-service';
+import { ModalService } from './../../shared/services/modal.service';
 
 @Component({
   selector: 'app-header',
@@ -9,14 +9,14 @@ import { DataService } from '../../shared/services/data-service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private dataService: DataService) { }
+  constructor(private modalService: ModalService) { }
   
   openModaSearch = event => {
     event.stopPropagation();
     this.hideMoidal(true);
   }
 
-  hideMoidal = (param: boolean) => this.dataService.openModalSearch(param);
+  hideMoidal = (param: boolean) => this.modalService.openModalSearch(param);
 
   stopPropagations = event => event.stopPropagation();
 
