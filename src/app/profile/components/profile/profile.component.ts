@@ -9,25 +9,21 @@ import { NetworksMock } from './../../../shared/mocks/networks.mock';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
-
-  image = "/assets/images/avatar.jpg";
-
+  readonly image = "/assets/images/avatar.jpg";
   networks = new NetworksMock().getNetworks;
-
   visible = false;
   copy = false;
 
-  displayTooltip() {
-    this.visible = true;
-  }
+  constructor() { }
+
+  displayTooltip = () => this.visible = true;
  
-  hideTooltip() {
+  hideTooltip = () => {
     this.visible = false;
     this.copy = false;
   }
 
-  copyEmail() {
+  copyEmail = () => {
     const email = document.getElementById('email') as HTMLInputElement;
     email.select();
     document.execCommand("copy");
