@@ -26,13 +26,6 @@
                 width: 80%;
                 position: relative;
 
-                .image {
-                    .avatar {
-                        width: 170px;
-                        height: 170px;
-                    }
-                }
-
                 .description {
                     padding-left: 20px;
                     line-height: 1.5;
@@ -55,15 +48,10 @@
                     .btns {
                         display: flex;
                         justify-content: flex-start;
-                        position: relative;
                         
-                        .btn, .btn-outline {	                   
+                        .btn-outline {	                   
                             margin-right: 20px;	                           
                         }	                        
-
-                        .btn-outline {	
-                            background: none;	
-                        }
                     }
                 }
             }

@@ -4,7 +4,7 @@
             <p>{{profile.hour}}</p>
         </div>
         <div class="avatar-wraper">
-            <div class="avatar" [ngStyle]="{'background-image':'url(' + profile.imageURL + ')'}"></div>
+            <app-avatar [height]="'140px'" [width]="'140px' "[image]="profile.imageURL"></app-avatar>
         </div>
     </div>
     <div class="body">

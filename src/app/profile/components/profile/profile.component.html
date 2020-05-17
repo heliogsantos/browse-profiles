@@ -2,9 +2,9 @@
     <section class="profile-banner">
         <div class="card">
             <div class="profile-description">
-                <div class="image">
-                    <div class="avatar" [ngStyle]="{'background-image':'url(' + image + ')'}"></div>
-                </div>
+
+                <app-avatar [height]="'170px'" [width]="'170px' "[image]="image"></app-avatar>
+
                 <div class="description">
                     <h2 class="color-base-dark font-700">Cladia Daniela Cezar</h2>
                     <p class="color-base-dark">Front-End web developer</p>
@@ -132,7 +132,7 @@
                         <div class="experience">
                             <div class="title-experience">
                                 <h4 class="color-base-dark font-700">Zup Innovation</h4>
-                                <button class="btn-outline radius-4">presente</button>
+                                <button class="btn radius-4">presente</button>
                             </div>
                            <div class="skills">
                                 <strong class="color-base-dark font-400">Skills</strong>

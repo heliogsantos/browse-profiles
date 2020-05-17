@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { CardComponent } from './components/card/card.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { FirstNamePipe } from './pipes/first-name.pipe';
+import { AvatarComponent } from './components/avatar/avatar.component';
 
 
 
@@ -12,13 +13,14 @@ import { FirstNamePipe } from './pipes/first-name.pipe';
   declarations: [
     CardComponent,
     FirstNamePipe,
-    ModalComponent
+    ModalComponent,
+    AvatarComponent
   ],
   imports: [
     CommonModule,
     RouterModule
   ],
-  exports: [CardComponent, FirstNamePipe, ModalComponent],
+  exports: [CardComponent, FirstNamePipe, ModalComponent, AvatarComponent],
   providers: [],
 })
 export class SharedModule { }
