@@ -1,5 +1,7 @@
+@import '../../../../sass/variables';
+
 .wraper-modal {
-    background-color: #fefff4;
+    background-color: $bg-3;
     width: 100%;
     top: -100%;
     position: fixed;
@@ -32,11 +34,11 @@
 
         p {
             font-size: 14px;
-            color: #000000;
+            color: $text-1;
         }
 
         p strong {
-            color: #5f49ab;
+            color: $bg-1;
             font-weight: 800;
             font-size: 18px;
             padding-right: 10px;
@@ -57,16 +59,12 @@
         p {
             font-weight: 800;
             font-size: 17px;
-            color: #000000;
+            color: $text-1;
             padding: 10px 0;
         }
 
         .btn-type {
             margin-top: 10px;
-            background-image: none;
-            color: #000000;
-            border: 2px solid #000000;
-
         }
 
         .buttons {
@@ -82,7 +80,8 @@
 
             .active-filter {
                 color: #ffffff;
-                background: #5f49ab;
+                background-image: linear-gradient(90deg, $bg-2, $bg-1);
+                border-color: $bg-2;
             }
         }
     }

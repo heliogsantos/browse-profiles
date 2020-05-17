@@ -11,13 +11,14 @@
                     <p class="color-base-dark font-700">Pleno <strong>CLT</strong></p>
                     <div class="btns">
                         <a [routerLink]="['']" class="color-base-dark btn-outline">WhatsApp</a>
-                        <a (mouseleave)="hideTooltip()" (mouseover)="displayTooltip();" class="color-base-dark btn-outline">E-mail
-                        <div class="tooltip radius-4" [class.visible]="visible">
-                            <input class="font-800" id="email" *ngIf="!copy" type="text" value="helio.santosjunior@outlook.com">
-                            <div *ngIf="!copy" class="copy" (click)="copyEmail()"></div>
-                            <p class="font-600" *ngIf="copy">Copiado com sucesso!</p>
-                        </div>
-                    </a>
+                        <a (mouseleave)="hideTooltip()" (mouseover)="displayTooltip();" class="color-base-dark btn-outline">
+                            E-mail
+                            <div class="tooltip radius-4" [class.visible]="visible">
+                                <input class="font-800" id="email" *ngIf="!copy" type="text" value="helio.santosjunior@outlook.com">
+                                <div *ngIf="!copy" class="copy" (click)="copyEmail()"></div>
+                                <p class="font-600 align-center" *ngIf="copy">Copiado com sucesso!</p>
+                            </div>
+                        </a>
                         <a [routerLink]="['']" class="color-base-dark btn-outline">Currículo</a>
                     </div>
                 </div>
