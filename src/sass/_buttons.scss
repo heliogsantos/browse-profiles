@@ -1,0 +1,50 @@
+@import './variables';
+
+.btn, .btn-outline {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(90deg, $bg-2, $bg-1);
+    align-items: center;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 13px;
+    font-weight: 600;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 13px;
+    position: relative;
+
+    &:hover {
+        animation: animeButton .2s linear;
+    }
+}
+
+.btn-outline {
+    background-image: none;
+    border: 2px solid $bg-1;
+    color: $text-1;
+}
+
+@keyframes animeButton {
+    0% {transform: translateX(-1.5px);}
+    25% {transform: translateX(1.5px);}
+
+    50% {transform: translateX(-1.5px);}
+    70% {transform: translateX(1.5px);}
+
+    80% {transform: translateX(-1.5px);}
+    100% {transform: translateX(1.5px);}
+}
+
+.btn-skill {
+    padding: 9px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 10px;
+    background: $bg-3;
+    -webkit-box-shadow: 0px 2px 13px -3px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 2px 13px -3px rgba(0,0,0,0.15);
+    box-shadow: 0px 2px 13px -3px rgba(0,0,0,0.15);
+}

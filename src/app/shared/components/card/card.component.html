@@ -1,6 +1,6 @@
-<div class="card padding-default">
+<div class="card padding-default radius-4">
     <div class="header">
-        <div class="title font-700 color-card">
+        <div class="title font-700">
             <p>{{profile.hour}}</p>
         </div>
         <div class="avatar-wraper">
@@ -8,13 +8,13 @@
         </div>
     </div>
     <div class="body">
-        <div class="titles align-center color-card">
+        <div class="titles align-center">
             <p class="font-700">{{profile.name}}</p>
             <p class="font-300">{{profile.area}}</p>
             <p class="font-600">{{profile.contract}}</p>
         </div>
-        <div class="slills color-card">
-            <div class="skill font-600" *ngFor="let skill of skillSize(profile.skills)">{{skill | firstName}}</div>
+        <div class="slills">
+            <div class="btn-skill font-600" *ngFor="let skill of skillSize(profile.skills)">{{skill | firstName}}</div>
             <div class="btn btn-animation font-600" *ngIf="profile.skills.length > 3">+{{moreSkill(profile.skills, skillSize(profile.skills))}}</div>
         </div>
     </div>
@@ -23,7 +23,7 @@
             <p>{{profile.description}}</p>
         </div>
         <div class="align-center font-700 link">
-            <a [routerLink]="['/profile']" class="color-card">Ver perfil</a>
+            <a [routerLink]="['/profile']">Ver perfil</a>
         </div>
     </div>
 </div> 
