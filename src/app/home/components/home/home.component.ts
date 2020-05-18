@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ProfileService } from './../../../shared/services/profile.service';
+import { Profile } from './../../../shared/models/profile.model';
 
 @Component({
   selector: 'app-home',
@@ -11,11 +12,10 @@ export class HomeComponent implements OnInit {
 
   constructor(private profileService: ProfileService) { }
 
-  
-  profiles: any;
+  profiles: Profile[];
   
   ngOnInit() {
-   this.profileService.read().subscribe((profile: any) => this.profiles = profile);
+   this.profileService.read().subscribe((profile: Profile[]) => this.profiles = profile);
   }
 
 }

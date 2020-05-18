@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
+import { Profile } from './../models/profile.model';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -11,8 +13,8 @@ export class ProfileService {
   
   constructor(private http: HttpClient) { }
 
-  read(): Observable<any> {
-    return this.http.get<any[]>(this.API);
+  read(): Observable<Profile[]> {
+    return this.http.get<Profile[]>(this.API);
   }
 
 }
