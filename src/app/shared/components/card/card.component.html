@@ -22,8 +22,9 @@
     </div>
     <div class="footer">
         <div class="align-center description">
-            <p>{{profile.about}}</p>
+            <p>{{descreaseTextAbout(profile.about)}}</p>
         </div>
+        <div class="line"></div>
         <div class="align-center font-700 link">
             <a [routerLink]="['/profile', profile.id]">Ver perfil</a>
         </div>

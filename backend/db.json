@@ -61,61 +61,6 @@
                 "DateInit": "10/10/2019",
                 "DateEnd": null
               }
-            ],
-             "skills": [
-              {
-                "skill": "Javascript",
-                "level": 70
-              },{
-                "skill": "CSS",
-                "level": 90
-              },{
-                "skill": "HTML5",
-                "level": 95
-              },{
-                "skill": "Bootstrap",
-                "level": 50
-              },{
-                "skill": "React",
-                "level": 80
-              }
-            ],
-            "addres": {
-              "street": "José Osvaldo",
-              "city": "Sao Paulo",
-              "neighborhood": "Tucuruvi"
-            },
-            "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia accusantium similique quisquam odit delectus eveniet illum necessitatibus minus officiis totam, repellat reiciendis maiores aliquid iste. Architecto placeat eligendi numquam",
-            "description": {
-              "formation": "Sitema para internet",
-              "age": 29,
-              "contract": "CLT"
-            },
-            "experience": [
-              {
-                "companyName": "Zup Inovation",
-                "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
-                "current": true
-              },
-              {
-                "companyName": "Isquik",
-                "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
-              },
-              {
-                "companyName": "Zup Inovation",
-                "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
-              },{
-                "companyName": "JR Comunicação",
-                "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
-              }
             ]
           },{
             "id": "2",
@@ -124,61 +69,6 @@
             "contract": "PJ",
             "imageURL": "../../../../assets/images/marcela.jpg",
             "hour": "R$ 24/hr",
-             "skills": [
-              {
-                "skill": "Javascript",
-                "level": 70
-              },{
-                "skill": "CSS",
-                "level": 90
-              },{
-                "skill": "HTML5",
-                "level": 95
-              },{
-                "skill": "Bootstrap",
-                "level": 50
-              },{
-                "skill": "React",
-                "level": 80
-              }
-            ],
-            "addres": {
-              "street": "José Osvaldo",
-              "city": "Sao Paulo",
-              "neighborhood": "Tucuruvi"
-            },
-            "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia accusantium similique quisquam odit delectus eveniet illum necessitatibus minus officiis totam, repellat reiciendis maiores aliquid iste. Architecto placeat eligendi numquam",
-            "description": {
-              "formation": "Sitema para internet",
-              "age": 29,
-              "contract": "CLT"
-            },
-            "experience": [
-              {
-                "companyName": "Zup Inovation",
-                "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
-                "current": true
-              },
-              {
-                "companyName": "Isquik",
-                "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
-              },
-              {
-                "companyName": "Zup Inovation",
-                "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
-              },{
-                "companyName": "JR Comunicação",
-                "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
-              }
-            ],
             "skills": [
               {
                 "skill": "Javascript",
@@ -574,7 +464,7 @@
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
             },
-            "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia accusantium similique quisquam odit delectus eveniet illum necessitatibus minus officiis totam, repellat reiciendis maiores aliquid iste. Architecto placeat eligendi numquam",
+            "about": "Lorem ipsum dolor sit amet, consectetur",
             "description": {
               "formation": "Sitema para internet",
               "age": 29,
@@ -636,7 +526,7 @@
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
             },
-            "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia accusantium similique quisquam odit delectus eveniet illum necessitatibus minus officiis totam, repellat reiciendis maiores aliquid iste. Architecto placeat eligendi numquam",
+            "about": "Lorem ipsum dolor",
             "description": {
               "formation": "Sitema para internet",
               "age": 29,
