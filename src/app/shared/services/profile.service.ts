@@ -17,4 +17,9 @@ export class ProfileService {
     return this.http.get<Profile[]>(this.API);
   }
 
+  readById(profileID: string): Observable<Profile> {
+    const url = `${this.API}/${profileID}`;
+    return this.http.get<Profile>(url);
+  }
+
 }

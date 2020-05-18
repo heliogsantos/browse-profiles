@@ -18,9 +18,6 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes)
   ],
-  exports: [
-    ProfileComponent,
-    RouterModule
-  ]
+  exports: []
 })
 export class ProfileModule { }
