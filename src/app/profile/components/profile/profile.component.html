@@ -3,40 +3,38 @@
         <div class="card">
             <div class="profile-description">
 
-                <app-avatar [height]="'170px'" [width]="'170px' "[image]="image"></app-avatar>
+                <app-avatar [height]="'170px'" [width]="'170px' "[image]="profile?.imageURL"></app-avatar>
 
                 <div class="description">
-                    <h2 class="color-base-dark font-700">Cladia Daniela Cezar</h2>
-                    <p class="color-base-dark">Front-End web developer</p>
-                    <p class="color-base-dark font-700">Pleno <strong>CLT</strong></p>
+                    <h2 class="color-base-dark font-700">{{profile?.name}}</h2>
+                    <p class="color-base-dark">{{profile?.area}}</p>
+                    <p class="color-base-dark font-700">{{profile?.level}} <strong class="color-1 font-800">{{profile?.contract}}</strong></p>
                     <div class="btns">
                         <a [routerLink]="['']" class="color-base-dark btn-outline">WhatsApp</a>
                         <a (mouseleave)="hideTooltip()" (mouseover)="displayTooltip();" class="color-base-dark btn-outline">
                             E-mail
                             <div class="tooltip radius-4" [class.visible]="visible">
-                                <input class="font-800" id="email" *ngIf="!copy" type="text" value="helio.santosjunior@outlook.com">
+                                <input class="font-800" id="email" *ngIf="!copy" type="text" [value]="profile?.email">
                                 <div *ngIf="!copy" class="copy" (click)="copyEmail()"></div>
                                 <p class="font-600 align-center" *ngIf="copy">Copiado com sucesso!</p>
                             </div>
                         </a>
-                        <a [routerLink]="['']" class="color-base-dark btn-outline">Currículo</a>
                     </div>
                 </div>
             </div>
 
             <div class="avaliable" *ngIf="true">
                 <div class="hour">
-                    <p class="color-base-dark font-700">R$ 32/hr</p>
+                    <p class="color-base-dark font-700">{{profile?.hour}}</p>
                 </div>
                 <div class="networks">
-                    <a [routerLink]="['']" class="network" *ngFor="let network of networks" [ngStyle]="{'background-image':'url(' + network.svg + ')'}"></a>
+                    <a target="_blanck" href={{network.link}} class="network" *ngFor="let network of profilesNetworks" [ngStyle]="{'background-image':'url(' + network.icon + ')'}"></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <div>
-            <section class="time-line">
+    <section class="time-line">
         <h3 class="color-gray font-600">Perfil completo</h3>
 
         <div class="progress">
@@ -47,9 +45,9 @@
                 <div class="content">
                    <p class="color-base-dark font-700">Endereço</p>
                    <div class="step adress">
-                        <p class="color-gray"><strong class="color-base-dark font-600">Rua</strong>José Osvaldo</p>
-                        <p class="color-gray"><strong class="color-base-dark font-600">Cidade</strong>Sao Paulo</p>
-                        <p class="color-gray"><strong class="color-base-dark font-600">Bairro</strong>Tucuruvi</p>
+                        <p class="color-gray"><strong class="color-base-dark font-600">Rua</strong>{{profile?.address?.street}}</p>
+                        <p class="color-gray"><strong class="color-base-dark font-600">Cidade</strong>{{profile?.address?.city}}</p>
+                        <p class="color-gray"><strong class="color-base-dark font-600">Bairro</strong>{{profile?.address?.neighborhood}}</p>
                    </div>
                 </div>
             </div>
@@ -60,36 +58,10 @@
                 </div>
                 <div class="content">
                     <p class="color-base-dark font-700">Habilidades</p>
-                    <div class="step skill">
+                    <div class="step skill" *ngFor="let skill of profile?.skills">
                         <div class="skill-level radius-4">
-                            <p class="color-base-dark font-600">Javascript</p>
-                            <div class="radius-left-4 bg-1 level" style="width: 30%"></div>
-                        </div>
-                    </div>
-
-                    <div class="step skill">
-                        <div class="radius-4 skill-level">
-                            <p class="color-base-dark font-600">CSS</p>
-                            <div class="radius-left-4 bg-1 level" style="width: 70%"></div>
-                        </div>
-                    </div>
-
-                    <div class="step skill">
-                        <div class="radius-4 skill-level">
-                            <p class="color-base-dark font-600">HTML5</p>
-                            <div class="radius-left-4 bg-1 level" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="step skill">
-                        <div class="radius-4 skill-level">
-                            <p class="color-base-dark font-600">Bootstrap</p>
-                            <div class="radius-left-4 bg-1 level" style="width: 70%"></div>
-                        </div>
-                    </div>
-                    <div class="step skill">
-                        <div class="radius-4 skill-level">
-                            <p class="radius-left-4 color-base-dark font-600">React</p>
-                            <div class="bg-1 level" style="width: 20%"></div>
+                            <p class="color-base-dark font-600">{{skill.skill}}</p>
+                            <div class="radius-left-4 bg-1 level" [ngStyle]="{'width': skill.level + '%'}"></div>
                         </div>
                     </div>
                 </div>
@@ -102,9 +74,7 @@
                 <div class="content">
                    <p class="color-base-dark font-700">Um pouco sobre mim</p>
                    <div class="step adress">
-                        <p class="color-gray about">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia accusantium similique quisquam odit delectus eveniet illum necessitatibus minus officiis totam, repellat reiciendis maiores aliquid iste. Architecto placeat eligendi numquam? Necessitatibus?
-                        </p>
+                        <p class="color-gray about">{{profile?.about}}</p>
                    </div>
                 </div>
             </div>
@@ -116,9 +86,9 @@
                 <div class="content">
                    <p class="color-base-dark font-700">Descrição</p>
                    <div class="step adress">
-                        <p class="color-gray"><strong class="color-base-dark font-600">Formação</strong>Sistema para internet</p>
-                        <p class="color-gray"><strong class="color-base-dark font-600">Idade</strong>20 anos</p>
-                        <p class="color-gray"><strong class="color-base-dark font-600">Tipo de contrato</strong>CLT</p>
+                        <p class="color-gray"><strong class="color-base-dark font-600">Formação</strong>{{profile?.description.formation}}</p>
+                        <p class="color-gray"><strong class="color-base-dark font-600">Idade</strong>{{profile?.description.age}}</p>
+                        <p class="color-gray"><strong class="color-base-dark font-600">Tipo de contrato</strong>{{profile?.description.contract}}</p>
                     </div>
                 </div>
             </div>
@@ -129,59 +99,24 @@
                 </div>
                 <div class="content">
                    <p class="color-base-dark font-700">Experiência</p>
-                    <div class="step adress">
+                    <div class="step adress" *ngFor="let experience of profile?.experience">
                         <div class="experience">
                             <div class="title-experience">
-                                <h4 class="color-base-dark font-700">Zup Innovation</h4>
-                                <button class="btn radius-4">presente</button>
+                                <h4 class="color-base-dark font-700">{{experience.companyName}}</h4>
+                                <button class="btn radius-4" *ngIf="experience.current">presente</button>
                             </div>
                            <div class="skills">
                                 <strong class="color-base-dark font-400">Skills</strong>
-                                <div class="btn-skill">Angular JS</div>
-                                <div class="btn-skill">Angular 2+</div>
-                                <div class="btn-skill">CSS3</div>
-                                <div class="btn-skill">HTML5</div>
-                                <div class="btn-skill">Javascript</div>
+                                <div class="btn-skill" *ngFor="let skill of experience.skills">{{skill}}</div>
                            </div>
-                           <p class="color-gray"><strong class="color-base-dark font-400">Início</strong>10/10/2019</p>
-                        </div>
-                    </div>
-
-                    <div class="step adress">
-                        <div class="experience">
-                            <div class="title-experience">
-                                <h4 class="color-base-dark font-700">Isquik</h4>
-                            </div>
-                           <div class="skills">
-                                <strong class="color-base-dark font-400">Skills</strong>
-                                <div class="btn-skill">HTML5</div>
-                                <div class="btn-skill">CSS3</div>
-                                <div class="btn-skill">Javascript</div>
-                                <div class="btn-skill">Angular JS</div>
-                           </div>
-                           <p class="color-gray"><strong class="color-base-dark font-400">Início</strong>20/01/2019</p>
-                           <p class="color-gray"><strong class="color-base-dark font-400">Fim</strong>10/06/2019</p>
-                        </div>
-                    </div>
-
-                    <div class="step adress">
-                        <div class="experience">
-                            <div class="title-experience">
-                                <h4 class="color-base-dark font-700">JR Comunicação</h4>
-                            </div>
-                           <div class="skills">
-                                <strong class="color-base-dark font-400">Skills</strong>
-                                <div class="btn-skill">HTML5</div>
-                                <div class="btn-skill">CSS3</div>
-                                <div class="btn-skill">Wordpress</div>
-                           </div>
-                           <p class="color-gray"><strong class="color-base-dark font-400">Início</strong>20/01/2019</p>
-                           <p class="color-gray"><strong class="color-base-dark font-400">Fim</strong>10/06/2019</p>
+                           <p class="color-gray"><strong class="color-base-dark font-400">Início</strong>{{experience.dateInit}}</p>
+                           <p class="color-gray"><strong class="color-base-dark font-400" *ngIf="!experience.current">Fim</strong>{{experience.dateEnd}}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    </div>
 </div>
+
+<app-modal></app-modal>

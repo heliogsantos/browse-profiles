@@ -1,9 +1,12 @@
 export class NetworksMock {
+
+    constructor(){}
+
     networks = [
-        {name: "linkedin", svg: "/assets/svg/linkedin.svg"},
-        {name: "facebook", svg: "/assets/svg/facebook.svg"},
-        {name: "twitter", svg: "/assets/svg/twitter.svg"},
-        {name: "github", svg: "/assets/svg/github.svg"}
+        {linkedin: "/assets/svg/linkedin.svg"},
+        {facebook: "/assets/svg/facebook.svg"},
+        {twitter: "/assets/svg/twitter.svg"},
+        {github: "/assets/svg/github.svg"}
     ]
     
     get getNetworks(): Object {

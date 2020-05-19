@@ -6,6 +6,9 @@
     position: relative;
     top: 100px;
     padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
     .profile-banner {
         width: 100%;
