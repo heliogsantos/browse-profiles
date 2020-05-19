@@ -7,6 +7,14 @@
             "contract": "Freelancer",
             "imageURL": "../../../../assets/images/avatar.jpg",
             "hour": "R$ 32/hr",
+            "level": "Pleno",
+            "email": "helio.santosjunior@outlook.com",
+            "networks": {
+              "linkeDInUrl": "https://www.linkedin.com/in/helio-gonzaga-0025a3157/",
+              "facebookUrl": "https://www.linkedin.com/in/helio-gonzaga-0025a3157/",
+              "twitterUrl": null,
+              "githubUrl": "https://github.com/heliogsantos"
+            },
              "skills": [
               {
                 "skill": "Javascript",
@@ -25,7 +33,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -40,26 +48,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
+                "dateInit": "10/10/2019",
                 "current": true
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -69,6 +76,8 @@
             "contract": "PJ",
             "imageURL": "../../../../assets/images/marcela.jpg",
             "hour": "R$ 24/hr",
+            "level": "Pleno",
+            "email": "helio.santosjunior@outlook.com",
             "skills": [
               {
                 "skill": "Javascript",
@@ -87,7 +96,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -102,26 +111,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
-                "current": true
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "current": true
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -131,6 +139,8 @@
             "contract": "CLT",
             "imageURL": "../../../../assets/images/paulo.jpg",
             "hour": "R$ 26/hr",
+            "level": "Pleno",
+            "email": "helio.santosjunior@outlook.com",
              "skills": [
               {
                 "skill": "Javascript",
@@ -149,7 +159,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -164,26 +174,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
+                "dateInit": "10/10/2019",
                 "current": true
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -211,7 +220,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -226,26 +235,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
+                "dateInit": "10/10/2019",
                 "current": true
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -255,6 +263,8 @@
             "contract": "PJ",
             "imageURL": "../../../../assets/images/luciano.jpg",
             "hour": "R$ 32/hr",
+            "level": "Pleno",
+            "email": "helio.santosjunior@outlook.com",
              "skills": [
               {
                 "skill": "Javascript",
@@ -273,7 +283,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -288,26 +298,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
-                "current": true
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "current": true
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -317,6 +326,8 @@
             "contract": "PJ",
             "imageURL": "../../../../assets/images/marcela.jpg",
             "hour": "R$ 24/hr",
+            "level": "Pleno",
+            "email": "helio.santosjunior@outlook.com",
              "skills": [
               {
                 "skill": "Javascript",
@@ -335,7 +346,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -350,26 +361,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
+                "dateInit": "10/10/2019",
                 "current": true
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -379,6 +389,8 @@
             "contract": "CLT",
             "imageURL": "../../../../assets/images/paulo.jpg",
             "hour": "R$ 26/hr",
+            "level": "Pleno",
+            "email": "helio.santosjunior@outlook.com",
              "skills": [
               {
                 "skill": "Javascript",
@@ -397,7 +409,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -412,26 +424,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
+                "dateInit": "10/10/2019",
                 "current": true
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -459,7 +470,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -474,26 +485,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
+                "dateInit": "10/10/2019",
                 "current": true
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -503,6 +513,8 @@
             "contract": "Freelancer",
             "imageURL": "../../../../assets/images/avatar.jpg",
             "hour": "R$ 32/hr",
+            "level": "Pleno",
+            "email": "helio.santosjunior@outlook.com",
              "skills": [
               {
                 "skill": "Javascript",
@@ -521,7 +533,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -536,26 +548,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
+                "dateInit": "10/10/2019",
                 "current": true
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -565,6 +576,8 @@
             "contract": "PJ",
             "imageURL": "../../../../assets/images/marcela.jpg",
             "hour": "R$ 24/hr",
+            "level": "Pleno",
+            "email": "helio.santosjunior@outlook.com",
              "skills": [
               {
                 "skill": "Javascript",
@@ -583,7 +596,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -598,26 +611,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
+                "dateInit": "10/10/2019",
                 "current": true
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -627,6 +639,8 @@
             "contract": "CLT",
             "imageURL": "../../../../assets/images/paulo.jpg",
             "hour": "R$ 26/hr",
+            "level": "Pleno",
+            "email": "helio.santosjunior@outlook.com",
              "skills": [
               {
                 "skill": "Javascript",
@@ -645,7 +659,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -660,26 +674,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
+                "dateInit": "10/10/2019",
                 "current": true
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -707,7 +720,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -722,26 +735,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
+                "dateInit": "10/10/2019",
                 "current": true
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -751,6 +763,8 @@
             "contract": "PJ",
             "imageURL": "../../../../assets/images/luciano.jpg",
             "hour": "R$ 32/hr",
+            "level": "Pleno",
+            "email": "helio.santosjunior@outlook.com",
              "skills": [
               {
                 "skill": "Javascript",
@@ -769,7 +783,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -784,26 +798,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
+                "dateInit": "10/10/2019",
                 "current": true
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -813,6 +826,8 @@
             "contract": "PJ",
             "imageURL": "../../../../assets/images/marcela.jpg",
             "hour": "R$ 24/hr",
+            "level": "Pleno",
+            "email": "helio.santosjunior@outlook.com",
              "skills": [
               {
                 "skill": "Javascript",
@@ -831,7 +846,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -846,26 +861,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
+                "dateInit": "10/10/2019",
                 "current": true
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -875,6 +889,8 @@
             "contract": "CLT",
             "imageURL": "../../../../assets/images/paulo.jpg",
             "hour": "R$ 26/hr",
+            "level": "Pleno",
+            "email": "helio.santosjunior@outlook.com",
              "skills": [
               {
                 "skill": "Javascript",
@@ -893,7 +909,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -908,26 +924,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
+                "dateInit": "10/10/2019",
                 "current": true
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -955,7 +970,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -970,26 +985,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
+                "dateInit": "10/10/2019",
                 "current": true
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -1017,7 +1031,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -1032,26 +1046,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
+                "dateInit": "10/10/2019",
                 "current": true
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           },{
@@ -1061,6 +1074,8 @@
             "contract": "PJ",
             "imageURL": "../../../../assets/images/luciano.jpg",
             "hour": "R$ 32/hr",
+            "level": "Pleno",
+            "email": "helio.santosjunior@outlook.com",
              "skills": [
               {
                 "skill": "Javascript",
@@ -1079,7 +1094,7 @@
                 "level": 80
               }
             ],
-            "addres": {
+            "address": {
               "street": "José Osvaldo",
               "city": "Sao Paulo",
               "neighborhood": "Tucuruvi"
@@ -1094,26 +1109,25 @@
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null,
+                "dateInit": "10/10/2019",
                 "current": true
               },
               {
                 "companyName": "Isquik",
                 "skills": ["AngularJS", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },
               {
                 "companyName": "Zup Inovation",
                 "skills": ["AngularJS", "Angular", "CSS3", "HTML5", "Javascript"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               },{
                 "companyName": "JR Comunicação",
                 "skills": ["CSS3", "HTML5", "Wordpress"],
-                "DateInit": "10/10/2019",
-                "DateEnd": null
+                "dateInit": "10/10/2019",
+                "dateEnd": "10/10/2019"
               }
             ]
           }
