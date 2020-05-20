@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 
 import { ProfileService } from './../../../shared/services/profile.service';
@@ -12,10 +13,10 @@ export class HomeComponent implements OnInit {
 
   constructor(private profileService: ProfileService) { }
 
-  profiles: Profile[];
+  profiles: Observable<Profile[]>;
   
   ngOnInit() {
-   this.profileService.read().subscribe((profile: Profile[]) => this.profiles = profile);
+    this.profiles = this.profileService.read();
   }
 
 }
