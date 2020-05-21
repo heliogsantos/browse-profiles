@@ -50,15 +50,15 @@ export class ProfileComponent implements OnInit {
       )
     }
   }
-
+  
   ngOnInit() {
     this.profileService.readById(this.id).subscribe((profile: Profile) => {
       this.profile = profile;
 
-      this.networkAssembly(this.profile.networks.facebookUrl, 'facebook');
-      this.networkAssembly(this.profile.networks.linkeDInUrl, 'linkedin');
-      this.networkAssembly(this.profile.networks.twitterUrl, 'twitter');
-      this.networkAssembly(this.profile.networks.githubUrl, 'github');
+      this.networkAssembly(this.profile.networks?.facebookUrl, 'facebook');
+      this.networkAssembly(this.profile.networks?.linkeDInUrl, 'linkedin');
+      this.networkAssembly(this.profile.networks?.twitterUrl, 'twitter');
+      this.networkAssembly(this.profile.networks?.githubUrl, 'github');
 
     });
 
