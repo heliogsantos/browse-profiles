@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { NetworksMock } from './../../../shared/mocks/networks.mock';
 import { ProfileService } from './../../../shared/services/profile.service';
-import { Profile, ProfileNetworks } from './../../../shared/models/profile.model';
+import { Profile } from './../../../shared/models/profile.model';
 
 @Component({
   selector: 'app',
@@ -13,12 +13,10 @@ import { Profile, ProfileNetworks } from './../../../shared/models/profile.model
 export class ProfileComponent implements OnInit {
 
   readonly image = "/assets/images/avatar.jpg";
-  networksMock = new NetworksMock().getNetworks;
   visible = false;
   copy = false;
   profile: Profile;
   id = this.activeRouter.snapshot.paramMap.get('id');
-
   profilesNetworks = [];
 
   constructor(
@@ -40,35 +38,29 @@ export class ProfileComponent implements OnInit {
     this.copy = true;
   }
 
-  createNetworks = (profilesNetworks, iconNetwork: object) => {
+  networkAssembly = (networks: string, networkName: string) => this.createProfileNetwork(networks, NetworksMock[networkName]);
 
-    this.profilesNetworks.push(
-      {
-        icon: Object.values(iconNetwork[0])[0],
-        link: profilesNetworks,
-      }
-    )
-  }
-
-  addUrlForNetwork = (networks: ProfileNetworks) => {
-    if(networks.facebookUrl) {
-      this.createNetworks(networks.facebookUrl, this.networksMock.filter(item => item.facebook));
-    }
-    if(networks.linkeDInUrl) {
-      this.createNetworks(networks.linkeDInUrl, this.networksMock.filter(item => item.linkedin));
-    }
-    if(networks.twitterUrl) {
-      this.createNetworks(networks.twitterUrl, this.networksMock.filter(item => item.twitter));
-    }
-    if(networks.githubUrl) {
-      this.createNetworks(networks.githubUrl, this.networksMock.filter(item => item.github));
+  createProfileNetwork = (profilesNetwork: string, iconNetwork: string) => {
+    if(profilesNetwork) {
+      this.profilesNetworks.push(
+        {
+          icon: iconNetwork,
+          link: profilesNetwork
+        }
+      )
     }
   }
 
   ngOnInit() {
     this.profileService.readById(this.id).subscribe((profile: Profile) => {
       this.profile = profile;
-      this.addUrlForNetwork(this.profile.networks)
+
+      this.networkAssembly(this.profile.networks.facebookUrl, 'facebook');
+      this.networkAssembly(this.profile.networks.linkeDInUrl, 'linkedin');
+      this.networkAssembly(this.profile.networks.twitterUrl, 'twitter');
+      this.networkAssembly(this.profile.networks.githubUrl, 'github');
+
     });
+
   }
 }
