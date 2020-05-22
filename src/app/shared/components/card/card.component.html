@@ -14,9 +14,9 @@
             <p class="font-600">{{profile.contract}}</p>
         </div>
         <div class="slills">
-            <div class="btn-skill font-600" *ngFor="let skill of skillSize(profile.skills)">{{skill.skill | firstName}}</div>
+            <div class="btn-skill font-600" *ngFor="let skill of decreaseSkills(profile.skills)">{{skill.skill | firstName}}</div>
             <a [routerLink]="['/profile']">
-                <div class="btn btn-animation font-600" *ngIf="profile.skills.length > 3">+{{moreSkill(profile.skills, skillSize(profile.skills))}}</div>
+                <div class="btn btn-animation font-600" *ngIf="profile.skills.length > 3">+{{moreSkill(profile.skills, decreaseSkills(profile.skills))}}</div>
             </a>
         </div>
     </div>

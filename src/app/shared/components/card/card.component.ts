@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+import { CardProfile, Skills } from './card.model';
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -9,11 +11,11 @@ export class CardComponent implements OnInit {
 
   constructor() { }
 
-   @Input() profile: any;
+   @Input() profile: CardProfile;
 
-  skillSize = (skills: string) => skills.slice(0, 3);
+  decreaseSkills = (skills: string) => skills.slice(0, 3);
 
-  moreSkill = (profile: any, skillSize: String[]) => profile.length - skillSize.length;
+  moreSkill = (profile: Skills[], skillSize: String[]) => profile.length - skillSize.length;
 
   descreaseTextAbout = (str: string) => str.length >= 100 ? str.slice(0, 50) : str;
 
