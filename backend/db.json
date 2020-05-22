@@ -17,7 +17,7 @@
             },
              "skills": [
               {
-                "skill": "Javascript",
+                "skill": "Javascript ES6",
                 "level": 70
               },{
                 "skill": "CSS",
@@ -29,8 +29,8 @@
                 "skill": "Bootstrap",
                 "level": 50
               },{
-                "skill": "React",
-                "level": 80
+                "skill": "React js",
+                "level": 50
               }
             ],
             "address": {
