@@ -9,12 +9,17 @@ import { CoreModule } from './core/core.module';
 import { HomeComponent } from './home/components/home/home.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: '', 
+    redirectTo: 'home', pathMatch: 'full'
+  },
+  { path: 'home', 
+    component: HomeComponent 
+  },
   { path: 'profile/:id', 
-    loadChildren: () => import('./profile/profile.module').then(profile => profile.ProfileModule)  
+    loadChildren: () => import('./profile/profile.module').then(profile => profile.ProfileModule) 
   }
 ];
+
 @NgModule({
   declarations: [
     AppComponent
