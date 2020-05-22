@@ -14,7 +14,7 @@
                         <a (mouseleave)="hideTooltip()" (mouseover)="displayTooltip();" class="color-base-dark btn-outline">
                             E-mail
                             <div class="tooltip radius-4" [class.visible]="visible">
-                                <input class="font-800" id="email" *ngIf="!copy" type="text" [value]="profile?.email">
+                                <input disabled class="font-800" id="email" *ngIf="!copy" type="text" [value]="profile?.email">
                                 <div *ngIf="!copy" class="copy" (click)="copyEmail()"></div>
                                 <p class="font-600 align-center" *ngIf="copy">Copiado com sucesso!</p>
                             </div>
