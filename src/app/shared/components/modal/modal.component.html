@@ -1,10 +1,10 @@
-<section class="wraper-modal" [ngClass]="{'activeModalSearh': renderModal}" (click)="stopPropagations($event)">
+<section class="wraper-modal" [ngClass]="{'activeModalSearh': true}" (click)="stopPropagations($event)">
     <div class="header padding-default">
-        <p><strong>Faça sua busca por:</strong> Tipo de contarato, Nível de experiência ou empresa</p>
+        <p><strong>Faça seu filtro por:</strong> Tipo de contarato, habilidades,  Nível de experiência ou empresa</p>
     </div>
     <div class="content padding-default">
         <div class="select-wraper box">
-            <select class="select btn-outline radius-4">
+            <select class="select border-default radius-4">
                 <option class="font-800" value="selectprofile" *ngFor="let selectprofile of selectprofiles">{{selectprofile}}</option>
             </select>
         </div>
@@ -18,6 +18,12 @@
         </div>
     </div>
     <div class="footer padding-default">
-        <button (click)="closeModalSearch()" class="btn btn-animation">fechar</button>
+        <button (click)="closeModalSearch()" class="btn">fechar</button>
+        <button (click)="closeModalSearch()" class="btn btn-icon">
+            filtrar
+            <div class="icon">
+                <img src="./assets/svg/filtro-white.svg" alt="Buscar">
+            </div>
+        </button>
     </div>
 </section>

@@ -47,7 +47,6 @@
 
     .content {
         padding: 0px 30px;
-        height: 60%;
         background-image: none;
         display: block;
 
@@ -80,17 +79,20 @@
 
             .active-filter {
                 color: #ffffff;
-                background-image: linear-gradient(90deg, $bg-2, $bg-1);
-                border-color: $bg-2;
+                background: $bg-1;
+                border-color: $bg-1;
             }
         }
     }
 
     .footer {
-        background-image: none;
         justify-content: space-between;
-        padding: 30px 30px 10px 30px;
-
+        padding: 20px 30px 7px 30px;
+        background-color: $bg-3;
+        -webkit-box-shadow: -1px -14px 26px -15px rgba(0,0,0,0.06);
+        -moz-box-shadow: -1px -14px 26px -15px rgba(0,0,0,0.06);
+        box-shadow: -1px -14px 26px -15px rgba(0,0,0,0.06);
+        margin-top: 50px;
     }
 }
 
