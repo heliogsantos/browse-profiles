@@ -1,25 +1,26 @@
-<section class="wraper-modal" [ngClass]="{'activeModalSearh': true}" (click)="stopPropagations($event)">
+<section class="wraper-modal" [ngClass]="{'activeModalSearh': renderModal}" (click)="stopPropagations($event)">
     <div class="header padding-default">
         <p><strong>Faça seu filtro por:</strong> Tipo de contarato, habilidades,  Nível de experiência ou empresa</p>
     </div>
     <div class="content padding-default">
         <div class="select-wraper box">
-            <select class="select border-default radius-4">
-                <option class="font-800" value="selectprofile" *ngFor="let selectprofile of selectprofiles">{{selectprofile}}</option>
+            <label class="font-700">Selecione habilidades</label>
+            <select class="select border-default radius-4" [(ngModel)]="select">
+                <option class="font-800" *ngFor="let selectprofile of selectprofiles">{{selectprofile}}</option>
             </select>
         </div>
         <div class="buttons">
             <div class="box" *ngFor="let filter of filters">
                 <p>{{filter.name}}</p>
                 <ul>
-                    <li (click)="filterSearch($event)" class="btn-outline btn-type" *ngFor="let type of filter.types">{{type}}</li>
+                    <li (click)="active($event.target, $event.target.textContent)" class="btn-outline btn-type" *ngFor="let type of filter.types">{{type}}</li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="footer padding-default">
-        <button (click)="closeModalSearch()" class="btn">fechar</button>
-        <button (click)="closeModalSearch()" class="btn btn-icon">
+        <button (click)="close()" class="btn">fechar</button>
+        <button (click)="filterProfiles()" class="btn btn-icon">
             filtrar
             <span class="icon">
                 <img src="./assets/svg/filtro-white.svg" alt="Buscar">
