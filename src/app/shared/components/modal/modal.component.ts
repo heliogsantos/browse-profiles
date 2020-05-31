@@ -30,7 +30,7 @@ export class ModalComponent implements OnInit {
   remove(index: number, value: string) {
     for(let list of this.listFilter) {
       if(this.listFilter[index] === list) {
-        this.listFilter.splice(this.listFilter.indexOf(value), 1)
+        this.listFilter.splice(this.listFilter.indexOf(value), 1);
       }
     }
   }
@@ -43,6 +43,11 @@ export class ModalComponent implements OnInit {
     };
     return filterProfiles;
   }
+  
+  validateModal = () => {
+    return !this.select || !this.listFilter.length;
+  }
+
 
   close = () => this.renderModal = false;
 

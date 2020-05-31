@@ -20,7 +20,7 @@
     </div>
     <div class="footer padding-default">
         <button (click)="close()" class="btn">fechar</button>
-        <button (click)="filterProfiles()" class="btn btn-icon">
+        <button [ngClass]="{'btn-disabled ': validateModal()}" (click)="filterProfiles()" class="btn btn-icon" [disabled]="validateModal()">
             filtrar
             <span class="icon">
                 <img src="./assets/svg/filtro-white.svg" alt="Buscar">
