@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { ModalService } from './../../services/modal.service';
 import { FilterMock } from '../../mocks/filter.mock';
+import { FilterModal } from './../../models/filter-modal.module';
 
 @Component({
   selector: 'app-modal',
@@ -37,11 +38,15 @@ export class ModalComponent implements OnInit {
 
   filterProfiles = () => {
     this.renderModal = false;
-    const filterProfiles = {
-      list: this.listFilter,
-      skill: this.select
+
+    const filter: FilterModal = {
+      skill: this.select,
+      contract: this.listFilter,
     };
-    return filterProfiles;
+
+
+
+    return this.modalService.filterProfiles(filter);
   }
   
   validateModal = () => !this.select || !this.listFilter.length;
