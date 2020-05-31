@@ -44,9 +44,7 @@ export class ModalComponent implements OnInit {
     return filterProfiles;
   }
   
-  validateModal = () => {
-    return !this.select || !this.listFilter.length;
-  }
+  validateModal = () => !this.select || !this.listFilter.length;
 
 
   close = () => this.renderModal = false;
