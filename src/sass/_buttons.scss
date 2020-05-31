@@ -1,6 +1,6 @@
 @import './variables';
 
-.btn, .btn-outline, .btn-icon {
+.btn, .btn-outline, .btn-icon, .btn-disabled  {
     display: flex;
     justify-content: space-around;
     background-image: linear-gradient(90deg, $bg-2, $bg-1);
@@ -42,6 +42,15 @@
             width: 100%;
             height: 100%;
         }
+    }
+}
+
+.btn-disabled {
+    background: $bg-4;
+    cursor: unset;
+
+    &:hover {
+        animation: none;
     }
 }
 
