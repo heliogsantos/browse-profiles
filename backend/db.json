@@ -4,10 +4,10 @@
             "id": "1",
             "name": "Mariana Petrecu",
             "area": "Mobile Designer",
-            "contract": "Freelancer",
+            "contract": "CLT",
             "imageURL": "../../../../assets/images/avatar.jpg",
             "hour": "R$ 32/hr",
-            "level": "Pleno",
+            "level": "Junior",
             "email": "helio.santosjunior@outlook.com",
             "networks": {
               "linkeDInUrl": "https://www.linkedin.com/in/helio-gonzaga-0025a3157/",
@@ -76,7 +76,7 @@
             "contract": "PJ",
             "imageURL": "../../../../assets/images/marcela.jpg",
             "hour": "R$ 24/hr",
-            "level": "Pleno",
+            "level": "Júnior",
             "email": "helio.santosjunior@outlook.com",
             "skills": [
               {
@@ -105,7 +105,7 @@
             "description": {
               "formation": "Sitema para internet",
               "age": 29,
-              "contract": "CLT"
+              "contract": "Company"
             },
             "experience": [
               {
@@ -199,9 +199,10 @@
             "id": "4",
             "name": "Rodrigo Cezar",
             "area": "UI",
-            "contract": "Freelancer",
+            "contract": "STARTUP",
             "imageURL": "../../../../assets/images/rodrigo.jpeg",
             "hour": "R$ 60/hr",
+            "level": "Sênior",
              "skills": [
               {
                 "skill": "Javascript",
@@ -260,10 +261,10 @@
             "id": "1",
             "name": "Luciano Rocha",
             "area": "Front-End",
-            "contract": "PJ",
+            "contract": "Grande empresa",
             "imageURL": "../../../../assets/images/luciano.jpg",
             "hour": "R$ 32/hr",
-            "level": "Pleno",
+            "level": "Sênior",
             "email": "helio.santosjunior@outlook.com",
              "skills": [
               {
@@ -323,7 +324,7 @@
             "id": "2",
             "name": "Marcela Rocha",
             "area": "Front-End",
-            "contract": "PJ",
+            "contract": "Pequena ou Média empresa",
             "imageURL": "../../../../assets/images/marcela.jpg",
             "hour": "R$ 24/hr",
             "level": "Pleno",
@@ -389,7 +390,7 @@
             "contract": "CLT",
             "imageURL": "../../../../assets/images/paulo.jpg",
             "hour": "R$ 26/hr",
-            "level": "Pleno",
+            "level": "Júnior",
             "email": "helio.santosjunior@outlook.com",
              "skills": [
               {
@@ -452,6 +453,7 @@
             "contract": "Freelancer",
             "imageURL": "../../../../assets/images/rodrigo.jpeg",
             "hour": "R$ 60/hr",
+            "level": "Sênior",
              "skills": [
               {
                 "skill": "Javascript",
@@ -510,7 +512,7 @@
             "id": "1",
             "name": "Mariana Petrecu",
             "area": "Mobile Designer",
-            "contract": "Freelancer",
+            "contract": "Pequena ou Média empresa",
             "imageURL": "../../../../assets/images/avatar.jpg",
             "hour": "R$ 32/hr",
             "level": "Pleno",
@@ -636,7 +638,7 @@
             "id": "3",
             "name": "Paulo Silva",
             "area": "Back-End",
-            "contract": "CLT",
+            "contract": "STARTUP",
             "imageURL": "../../../../assets/images/paulo.jpg",
             "hour": "R$ 26/hr",
             "level": "Pleno",
@@ -699,9 +701,10 @@
             "id": "4",
             "name": "Rodrigo Cezar",
             "area": "UI",
-            "contract": "Freelancer",
+            "contract": "STARTUP",
             "imageURL": "../../../../assets/images/rodrigo.jpeg",
             "hour": "R$ 60/hr",
+            "level": "Júnior",
              "skills": [
               {
                 "skill": "Javascript",
@@ -759,8 +762,8 @@
           },{
             "id": "1",
             "name": "Luciano Rocha",
-            "area": "Front-End",
-            "contract": "PJ",
+            "area": "UX",
+            "contract": "Pequena ou Média empresa",
             "imageURL": "../../../../assets/images/luciano.jpg",
             "hour": "R$ 32/hr",
             "level": "Pleno",
@@ -886,10 +889,10 @@
             "id": "3",
             "name": "Paulo Silva",
             "area": "Back-End",
-            "contract": "CLT",
+            "contract": "Pequena ou Média empresa",
             "imageURL": "../../../../assets/images/paulo.jpg",
             "hour": "R$ 26/hr",
-            "level": "Pleno",
+            "level": "Sênior",
             "email": "helio.santosjunior@outlook.com",
              "skills": [
               {
@@ -952,6 +955,7 @@
             "contract": "Freelancer",
             "imageURL": "../../../../assets/images/rodrigo.jpeg",
             "hour": "R$ 60/hr",
+            "level": "Sênior",
              "skills": [
               {
                 "skill": "Javascript",
@@ -1013,6 +1017,7 @@
             "contract": "Freelancer",
             "imageURL": "../../../../assets/images/rodrigo.jpeg",
             "hour": "R$ 60/hr",
+            "level": "Júnior",
              "skills": [
               {
                 "skill": "Javascript",
@@ -1071,7 +1076,7 @@
             "id": "1",
             "name": "Luciano Rocha",
             "area": "Front-End",
-            "contract": "PJ",
+            "contract": "Pequena ou Média empresa",
             "imageURL": "../../../../assets/images/luciano.jpg",
             "hour": "R$ 32/hr",
             "level": "Pleno",

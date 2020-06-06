@@ -1,8 +1,10 @@
-import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 
 import { ProfileService } from './../../../shared/services/profile.service';
 import { Profile } from './../../../shared/models/profile.model';
+import { ModalService } from './../../../shared/services/modal.service';
+import { FilterModal } from './../../../shared/models/filter-modal.module';
+
 
 @Component({
   selector: 'app-home',
@@ -11,12 +13,44 @@ import { Profile } from './../../../shared/models/profile.model';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private profileService: ProfileService) { }
+  profiles: Profile[];
+  notProfilesFilter: boolean = false;
 
-  profiles: Observable<Profile[]>;
-  
-  ngOnInit() {
-    this.profiles = this.profileService.read();
+  constructor(
+    private profileService: ProfileService,
+    private modalService: ModalService
+  ) { }
+
+  filterAllProfiles = () => {
+      this.readProfiles();
+      this.notProfilesFilter = false;
   }
 
+  readProfiles = () => {
+    this.profileService.read().subscribe((profile) => {
+      this.profiles = profile;
+    });
+  }
+
+  ngOnInit() {
+    
+    this.modalService.filterProfile.subscribe((filterModal: FilterModal) => {
+      this.notProfilesFilter = false;
+      this.profileService.read().subscribe((profile) => {
+
+        filterModal.contract.forEach(element => {
+          this.profiles = profile.filter(item =>
+            item.contract === element && item.area === filterModal.skill ||
+            item.level === element && item.area === filterModal.skill
+          );
+        });
+
+        if(!this.profiles.length) {
+          this.notProfilesFilter = true;
+        }
+      });
+    });
+
+    this.readProfiles();
+  }
 }

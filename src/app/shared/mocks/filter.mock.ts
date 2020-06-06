@@ -15,7 +15,7 @@ export class FilterMock {
         }
     ];
     
-   private listSelect = ["Todos os skills", "Front-End", "Back-End", "UI", "UX", "Full-Stack"]
+   private listSelect = ["Front-End", "Back-End", "UI", "UX", "Full-Stack"]
 
     public listButtons() {
         return this.filters;

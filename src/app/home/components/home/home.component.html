@@ -3,3 +3,15 @@
 </section>
 
 <app-modal></app-modal>
+
+<div *ngIf="notProfilesFilter" class="not-filter-profile">
+    <h1>Não conseguimos encontrar nenhum perfil</h1>
+    <span>😥</span>
+
+    <button class="btn-icon" (click)="filterAllProfiles()">
+        <div class="icon">
+            <img class="img-icon" src="../../../assets/svg/filtro-white.svg" alt="Voltar">
+        </div>
+        Filtrar todos
+    </button>
+</div>
