@@ -1,5 +1,3 @@
-# Browse Profiles com Angular
-
 <p align="center">
   <img src="src/assets/images/logo.jpg" width="500" title="javascript image">
 </p>
